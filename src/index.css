@@ -1,0 +1,91 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Yatra+One&family=Rozha+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Mukta', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFDF8;
+  color: #5D4037;
+}
+
+@layer base {
+  :root {
+    --background: 42 67% 98%;
+    --foreground: 12 33% 19%;
+    --card: 0 0% 100%;
+    --card-foreground: 12 33% 19%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 12 33% 19%;
+    --primary: 21 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 60% 92%;
+    --secondary-foreground: 12 33% 19%;
+    --muted: 40 30% 94%;
+    --muted-foreground: 16 16% 40%;
+    --accent: 45 65% 53%;
+    --accent-foreground: 12 33% 19%;
+    --destructive: 0 65% 47%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 45 35% 80%;
+    --input: 45 35% 85%;
+    --ring: 21 100% 45%;
+    --radius: 0.4rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: #FFFDF8;
+    color: rgb(93 64 55);
+  }
+}
+
+/* Decorative paper grain */
+.paper-grain {
+  background-image:
+    radial-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Temple arch utility */
+.arch-top {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* Drop cap for About page */
+.drop-cap::first-letter {
+  font-family: 'Rozha One', serif;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  float: left;
+  padding: 0.25rem 0.75rem 0 0;
+  color: #E65100;
+}
+
+/* Hide scrollbar for ornament strip */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Soft glow */
+.glow-saffron {
+  box-shadow: 0 0 0 1px rgba(212,175,55,0.35), 0 18px 60px -20px rgba(230,81,0,0.35);
+}
+
+/* Selection */
+::selection {
+  background: #E65100;
+  color: #FFFDF8;
+}
