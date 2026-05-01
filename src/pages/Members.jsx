@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { OmIcon, MandalaIcon, Divider } from "../components/Motifs";
 import { templeImages } from "../assets/templeImages";
+import manUserCircleIcon from "../assets/man-user-circle-icon.svg";
+import womanUserCircleIcon from "../assets/woman-user-circle-icon.svg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -26,15 +28,13 @@ const peethadhishMembers = [
 ];
 
 const members = [
-  { name: "श्रीमती सत्य देवी", role: "Chairman" },
+  { name: "श्रीमती सत्य देवी", role: "Chairman", icon: womanUserCircleIcon },
   { name: "पीठाधीश सतीश कुमार", role: "President", img: templeImages.satishPriest },
-  { name: "श्रीमती रूबी शर्मा", role: "Vice President" },
+  { name: "श्रीमती रूबी शर्मा", role: "Vice President", icon: womanUserCircleIcon },
   { name: "पीठाधीश ऋषि राज", role: "General Secretary", img: templeImages.rishirajPriest },
-  { name: "नित्यम गौर", role: "Joint Secretary" },
-  { name: "श्रीमती नीलम रानी", role: "Treasurer" },
+  { name: "नित्यम गौर", role: "Joint Secretary", icon: manUserCircleIcon },
+  { name: "श्रीमती नीलम रानी", role: "Treasurer", icon: womanUserCircleIcon },
 ];
-
-const placeholderImage = "https://via.placeholder.com/520x520?text=Member+Image";
 
 const Members = () => {
   return (
@@ -75,7 +75,7 @@ const Members = () => {
             >
               <div className="relative h-72 overflow-hidden bg-saffron/5">
                 <img
-                  src={member.img || placeholderImage}
+                  src={member.img}
                   alt={`${member.name} illustration`}
                   className="w-full h-full object-cover"
                 />
@@ -111,7 +111,7 @@ const Members = () => {
             >
               <div className="relative h-72 overflow-hidden bg-saffron/5">
                 <img
-                  src={member.img || placeholderImage}
+                  src={member.img || member.icon}
                   alt={`${member.name} illustration`}
                   className="w-full h-full object-cover"
                 />

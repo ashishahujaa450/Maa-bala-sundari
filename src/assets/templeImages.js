@@ -4,6 +4,7 @@ import maaPindi from './maa-pindi.jpg';
 import dhyanuBhakat from './dhyanu_bhakat.jpeg';
 import satish from './satishkumar.jpeg';
 import rishiraj from './rishiraj.jpeg';
+import maaMain from './mandir-main.jpeg';
 
 export const templeImages = {
   maaIdol: mata,
@@ -15,4 +16,5 @@ export const templeImages = {
   // Priest photos for Members page
   satishPriest: satish,
   rishirajPriest: rishiraj,
+  maaMain: maaMain
 };

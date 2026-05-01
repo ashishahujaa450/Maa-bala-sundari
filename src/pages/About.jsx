@@ -37,7 +37,7 @@ const About = () => {
           <motion.div {...fadeUp} className="md:col-span-5 md:sticky md:top-28 self-start">
             <div className="overflow-hidden border border-brass-gold/40"
                  style={{ borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}>
-              <img src={templeImages.maaIdol}
+              <img src={templeImages.maaMain}
                    alt="माँ बाला सुंदरी" className="w-full h-[520px] object-cover" />
             </div>
             <div className="mt-6 p-6 bg-white border border-brass-gold/30">

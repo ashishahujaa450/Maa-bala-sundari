@@ -19,7 +19,7 @@ const Home = () => {
       <section className="relative min-h-[92vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={templeImages.maaIdol}
+            src={templeImages.maaMain}
             alt="माँ बाला सुंदरी"
             className="w-full h-full object-cover object-center"
           />
