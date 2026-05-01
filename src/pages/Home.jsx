@@ -89,11 +89,11 @@ const Home = () => {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             {
-              icon: <Sunrise className="w-7 h-7" />, label: "प्रातः आरती", time: "6:00 बजे",
+              icon: <Sunrise className="w-7 h-7" />, label: "प्रातः आरती", time: "4:15 बजे",
               note: "मंगल आरती • सूर्योदय के साथ माता का स्वागत",
             },
             {
-              icon: <Sunset className="w-7 h-7" />, label: "संध्या आरती", time: "7:00 बजे",
+              icon: <Sunset className="w-7 h-7" />, label: "संध्या आरती", time: "6:00 बजे",
               note: "दीप आरती • दिनभर की कृपा का धन्यवाद",
             },
           ].map((c, i) => (

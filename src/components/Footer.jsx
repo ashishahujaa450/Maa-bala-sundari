@@ -31,11 +31,11 @@ const Footer = () => {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-3">
               <Clock size={16} className="text-saffron-light" />
-              <span>सुबह आरती — 6:00 बजे</span>
+              <span>सुबह आरती — 4:15 बजे</span>
             </li>
             <li className="flex items-center gap-3">
               <Clock size={16} className="text-saffron-light" />
-              <span>शाम आरती — 7:00 बजे</span>
+              <span>शाम आरती — 6:00 बजे</span>
             </li>
             <li className="flex items-center gap-3">
               <MapPin size={16} className="text-saffron-light" />
