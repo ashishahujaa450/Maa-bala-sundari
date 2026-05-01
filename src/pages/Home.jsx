@@ -130,19 +130,26 @@ const Home = () => {
             </div>
             <div className="overflow-hidden border border-brass-gold/40"
                  style={{ borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}>
-              <img src={templeImages.deviShrine}
+              <img src={templeImages.maaPindi}
                    alt="Devi Shrine" className="w-full h-[480px] object-cover" />
             </div>
           </div>
           <div className="md:col-span-7">
             <p className="text-xs tracking-[0.3em] uppercase text-saffron mb-3">मंदिर परिचय</p>
             <h2 className="font-yatra text-4xl sm:text-5xl text-ink-heading leading-snug">
-              माँ की पवित्र पिंडियाँ — स्वयं प्रकट दिव्य धाम
+              माँ बाला सुंदरी मंदिर का अद्भुत इतिहास
             </h2>
             <p className="font-body text-lg text-ink-body mt-6 leading-relaxed">
-              श्री बाला सुंदरी मंदिर शाहाबाद का एक प्राचीन एवं चमत्कारिक तीर्थ स्थल है, जहाँ माता की
-              पिंडियाँ स्वयं प्रकट हुई थीं। श्रद्धा से आने वाले हर भक्त की मनोकामना यहाँ पूर्ण होती है।
-              पीढ़ियों से पुजारी परिवार माता की निष्काम सेवा कर रहा है।
+              पीढ़ियों से परिवार द्वारा हो रही है पिंडियों की सेवा। स्थित प्राचीन मां बाला सुंदरी का इतिहास आस्था, तपस्या और चमत्कारों से जुड़ा हुआ है। यह मन्दिर आज भी लाखों श्रद्धालुओं की आस्था का केंद्र बना है, जहां पर माता रानी की पिंडियां स्वयंभू रूप में प्रकट हुई थी। चैत्र मास और शारदीय नवरात्रों में बड़ी संख्या में दूर-दूर से श्रद्धालु माथा टेकने के लिए पहुंचते हैं।
+            </p>
+            <p className="font-body text-lg text-ink-body mt-6 leading-relaxed">
+              कैसे हुई पिंडियां प्रकट: मंदिर के वर्तमान पीठाधीश पंडित सतीश कुमार ने जानकारी देते हुए बताया कि उनके पूर्वजों के अनुसार, वर्षों पहले एक ब्राह्मण मनसा जंगल में पशु चराने जाया करता था। एक दिन उसने देखा कि एक बाल कन्या वृक्ष के नीचे तपस्या में लीन है। जब वह उसके पास पहुंचा तो वह कन्या अंतर्ध्यान हो गई। उसी रात उस ब्राह्मण को स्वप्न में बाल कन्या के रूप में मां बाला सुंदरी के दर्शन हुए। मां ने बताया कि वे उसी स्थान पर दो पिंडियों के रूप में विराजमान हैं।
+            </p>
+            <p className="font-body text-lg text-ink-body mt-6 leading-relaxed">
+              पीढ़ी दर पीढ़ी की जा रही है सेवा: ब्राह्मण मनसा और उनके परिजनों ने वहीं माता के गुंबद का निर्माण करवाया और पूजा अर्चना आरंभ की। तब से लेकर आज तक उनके वंशज पीढ़ी दर पीढ़ी माता की सेवा में लगे हुए हैं। स्वर्गीय पंडित मुकंदी ने आजीवन सच्चे मन से निस्वार्थ सेवा की। अब पंडित चंद्र मुनि के दोनों पुत्र पीठाधीश सतीश कुमार और ऋषि राज अपने पूर्वजों की परंपरा को आगे बढ़ाते हुए मां बाला सुंदरी की पिंडियों की सेवा और पूजा-अर्चना कर रहे हैं।
+            </p>
+            <p className="font-body text-lg text-ink-heading mt-6 leading-relaxed font-medium">
+              !! जय माता दी !!
             </p>
             <Link to="/about" data-testid="intro-read-more"
                   className="group inline-flex items-center gap-2 mt-8 text-saffron-dark font-medium border-b border-saffron-dark/40 pb-1 hover:border-saffron-dark">
@@ -153,8 +160,11 @@ const Home = () => {
       </section>
 
       {/* QUOTE */}
-      <section className="bg-ivory-alt/70 border-y border-brass-gold/25 paper-grain">
-        <div className="max-w-4xl mx-auto px-6 sm:px-10 py-24 text-center">
+      <section className="bg-ivory-alt/70 border-y border-brass-gold/25 paper-grain relative overflow-hidden">
+        <div className="absolute -right-32 -top-32 text-saffron/10">
+          <MandalaIcon className="w-96 h-96 animate-slow-spin" />
+        </div>
+        <div className="max-w-4xl mx-auto px-6 sm:px-10 py-24 text-center relative">
           <Divider />
           <motion.blockquote {...fadeUp}
             className="font-quote text-2xl sm:text-3xl lg:text-4xl text-ink-heading leading-relaxed">

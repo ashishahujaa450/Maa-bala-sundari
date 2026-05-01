@@ -10,7 +10,7 @@ const Footer = () => {
         <MandalaIcon className="w-72 h-72 animate-slow-spin" />
       </div>
       <div className="absolute -left-16 -bottom-16 text-brass-gold/15">
-        <MandalaIcon className="w-64 h-64" />
+        <MandalaIcon className="w-64 h-64 animate-slow-spin" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-10 py-16 grid md:grid-cols-3 gap-10">
