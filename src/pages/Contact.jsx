@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Send, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { OmIcon, MandalaIcon, Divider } from "../components/Motifs";
-import { Toaster, toast } from "sonner";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -12,28 +11,8 @@ const fadeUp = {
 };
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: "", phone: "", message: "" });
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!form.name.trim() || !form.phone.trim() || !form.message.trim()) {
-      toast.error("कृपया सभी आवश्यक जानकारी भरें।");
-      return;
-    }
-    setSubmitting(true);
-    setTimeout(() => {
-      toast.success("जय माता दी! आपका संदेश प्राप्त हुआ — हम जल्द ही संपर्क करेंगे।");
-      setForm({ name: "", phone: "", message: "" });
-      setSubmitting(false);
-    }, 800);
-  };
-
   return (
     <div data-testid="contact-page">
-      <Toaster richColors position="top-center" />
 
       {/* HEADER */}
       <section className="relative bg-ivory-alt/60 border-b border-brass-gold/25 overflow-hidden">
@@ -54,7 +33,6 @@ const Contact = () => {
       {/* CONTENT */}
       <section className="max-w-6xl mx-auto px-6 sm:px-10 py-24">
         <div className="grid lg:grid-cols-2 gap-10">
-          {/* LEFT — INFO + MAP */}
           <motion.div {...fadeUp} className="space-y-6">
             <div className="bg-white border border-brass-gold/40 p-8">
               <div className="flex items-center gap-3 mb-6">
@@ -88,7 +66,9 @@ const Contact = () => {
                 })}
               </ul>
             </div>
+          </motion.div>
 
+          <motion.div {...fadeUp} className="space-y-6">
             <div className="border border-brass-gold/40 overflow-hidden bg-white">
               <div className="px-6 py-4 border-b border-brass-gold/30 flex items-center gap-3">
                 <MapPin size={18} className="text-saffron" />
@@ -105,72 +85,6 @@ const Contact = () => {
               />
             </div>
           </motion.div>
-
-          {/* RIGHT — FORM */}
-          <motion.form
-            {...fadeUp}
-            onSubmit={handleSubmit}
-            data-testid="contact-form"
-            className="bg-white border border-brass-gold/40 p-8 sm:p-10 self-start"
-          >
-            <h3 className="font-yatra text-3xl text-ink-heading">अपना संदेश भेजें</h3>
-            <p className="font-body text-ink-body mt-2">
-              हम आपकी जिज्ञासाओं का सादर उत्तर देंगे।
-            </p>
-
-            <div className="mt-8 space-y-5">
-              <div>
-                <label className="text-xs uppercase tracking-[0.25em] text-ink-muted">नाम</label>
-                <input
-                  data-testid="contact-input-name"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  placeholder="अपना पूरा नाम लिखें"
-                  className="mt-2 w-full bg-ivory-alt/60 border border-brass-gold/40 px-4 py-3 outline-none focus:border-saffron focus:bg-white transition-colors font-body text-ink-heading"
-                />
-              </div>
-              <div>
-                <label className="text-xs uppercase tracking-[0.25em] text-ink-muted">दूरभाष</label>
-                <input
-                  data-testid="contact-input-phone"
-                  name="phone"
-                  type="tel"
-                  value={form.phone}
-                  onChange={handleChange}
-                  placeholder="+91 ..."
-                  className="mt-2 w-full bg-ivory-alt/60 border border-brass-gold/40 px-4 py-3 outline-none focus:border-saffron focus:bg-white transition-colors font-body text-ink-heading"
-                />
-              </div>
-              <div>
-                <label className="text-xs uppercase tracking-[0.25em] text-ink-muted">संदेश</label>
-                <textarea
-                  data-testid="contact-input-message"
-                  name="message"
-                  rows={5}
-                  value={form.message}
-                  onChange={handleChange}
-                  placeholder="अपना संदेश यहाँ लिखें..."
-                  className="mt-2 w-full bg-ivory-alt/60 border border-brass-gold/40 px-4 py-3 outline-none focus:border-saffron focus:bg-white transition-colors resize-none font-body text-ink-heading"
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={submitting}
-                data-testid="contact-submit-button"
-                className="group inline-flex items-center gap-2 bg-saffron text-ivory px-8 py-3.5 border border-saffron hover:bg-ivory hover:text-saffron transition-colors duration-300 shadow-[5px_5px_0px_#C62828] font-medium disabled:opacity-60"
-              >
-                {submitting ? "भेजा जा रहा है..." : "संदेश भेजें"}
-                <Send size={18} className="group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-            <Divider />
-            <p className="text-center font-quote text-ink-body">
-              “जय माता दी 🙏 — माँ बाला सुंदरी आप पर अपनी कृपा बरसाएँ।”
-            </p>
-          </motion.form>
         </div>
       </section>
     </div>

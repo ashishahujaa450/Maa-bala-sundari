@@ -14,6 +14,9 @@ export default {
         "ink-body": "#5D4037",
         "ink-muted": "#8D6E63",
       },
+      animation: {
+        "slow-spin": "spin 20s linear infinite",
+      },
     },
   },
   plugins: [],

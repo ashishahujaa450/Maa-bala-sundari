@@ -47,9 +47,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.15 }}
             className="font-yatra text-5xl sm:text-6xl lg:text-7xl text-saffron-dark mt-8 leading-[1.05] tracking-wide"
           >
-            श्रीमद् देवी भगवती
-            <br />
-            <span className="text-crimson">बाला सुंदरी मंदिर</span>
+            प्राचीन बाला सुंदरी मंदिर
           </motion.h1>
 
           <motion.p
