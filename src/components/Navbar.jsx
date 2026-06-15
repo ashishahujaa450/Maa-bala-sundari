@@ -3,6 +3,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { OmIcon } from "./Motifs";
 
+const isShowMenu = false;
+
 const links = [
   { to: "/", label: "मुख्य" },
   { to: "/about", label: "हमारे बारे में" },
@@ -47,37 +49,41 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <ul className="hidden lg:flex items-center gap-1">
-          {links.map((l) => (
-            <li key={l.to}>
-              <NavLink
-                to={l.to}
-                data-testid={`nav-link-${l.label}`}
-                className={({ isActive }) =>
-                  `px-4 py-2 text-[15px] font-medium tracking-wide rounded-full transition-all duration-300 ${
-                    isActive
-                      ? "bg-saffron/10 text-saffron-dark"
-                      : "text-ink-heading hover:text-saffron hover:bg-saffron/5"
-                  }`
-                }
-              >
-                {l.label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {isShowMenu ? (
+          <ul className="hidden lg:flex items-center gap-1">
+            {links.map((l) => (
+              <li key={l.to}>
+                <NavLink
+                  to={l.to}
+                  data-testid={`nav-link-${l.label}`}
+                  className={({ isActive }) =>
+                    `px-4 py-2 text-[15px] font-medium tracking-wide rounded-full transition-all duration-300 ${
+                      isActive
+                        ? "bg-saffron/10 text-saffron-dark"
+                        : "text-ink-heading hover:text-saffron hover:bg-saffron/5"
+                    }`
+                  }
+                >
+                  {l.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        ) : null}
 
-        <button
-          data-testid="mobile-menu-toggle"
-          className="lg:hidden p-2 text-ink-heading"
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Menu"
-        >
-          {open ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        {isShowMenu ? (
+          <button
+            data-testid="mobile-menu-toggle"
+            className="lg:hidden p-2 text-ink-heading"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Menu"
+          >
+            {open ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        ) : null}
       </nav>
 
-      {open && (
+      {isShowMenu && open && (
         <div data-testid="mobile-menu" className="lg:hidden border-t border-brass-gold/25 bg-ivory">
           <ul className="px-6 py-4 flex flex-col gap-1">
             {links.map((l) => (
@@ -100,6 +106,7 @@ const Navbar = () => {
           </ul>
         </div>
       )}
+
     </header>
   );
 };

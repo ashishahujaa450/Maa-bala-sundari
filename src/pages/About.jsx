@@ -125,7 +125,7 @@ const About = () => {
           <motion.div {...fadeUp} className="md:col-span-5 md:sticky md:top-28 self-start">
             <div className="overflow-hidden border border-brass-gold/40"
                  style={{ borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}>
-              <img src={templeImages.maaMain}
+              <img src={templeImages.maaJot}
                    alt="माता की अखंड ज्योत" className="w-full h-[520px] object-cover" />
             </div>
             <div className="mt-6 p-6 bg-white border border-brass-gold/30">
@@ -135,6 +135,96 @@ const About = () => {
               </div>
               <p className="font-body text-sm text-ink-muted mt-2">
                 माता की अनंत कृपा और शाश्वत आशीर्वाद का चिरंतन प्रतीक।
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SHIVALAYA */}
+      <section className="max-w-6xl mx-auto px-6 sm:px-10 py-24">
+        <div className="grid md:grid-cols-12 gap-12">
+          <motion.div {...fadeUp} className="md:col-span-5 md:sticky md:top-28 self-start">
+            <div className="overflow-hidden border border-brass-gold/40"
+                 style={{ borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}>
+                  <img src={templeImages.shivalya || templeImages.maaMain}
+                   alt="शिवालय" className="w-full h-[520px] object-cover" />
+            </div>
+            <div className="mt-6 p-6 bg-white border border-brass-gold/30">
+              <div className="flex items-center gap-3 text-saffron-dark">
+                <LotusIcon className="w-6 h-6" />
+                <p className="font-yatra text-2xl">शिवालय</p>
+              </div>
+              <p className="font-body text-sm text-ink-muted mt-2">
+                शिवालय में माता के साथ-साथ भोलेनाथ की भी आराधना की जाती है। यह स्थान भक्तों के लिए शांति और
+                ध्यान का केंद्र रहा है।
+              </p>
+            </div>
+          </motion.div>
+
+          <div className="md:col-span-7 space-y-10">
+            <motion.h2 {...fadeUp} className="font-yatra text-3xl sm:text-4xl text-ink-heading">
+              शिवालय और पूजा-अर्चना
+            </motion.h2>
+
+            <motion.p {...fadeUp} className="drop-cap font-body text-lg text-ink-body leading-[1.95]">
+              शिवालय मंदिर परिसर का एक महत्वपूर्ण भाग है जहाँ पर भोलेनाथ की पूजा होती है। यहाँ प्रतिदिन
+              सुबह और सायंकाल भक्तों द्वारा आरती और भजन आयोजित होते हैं। यह स्थान श्रद्धालुओं को ध्यान,
+              शांति और आत्मिक शुद्धि प्रदान करता है। 
+            </motion.p>
+
+            <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+              श्रद्धालु विशेष अवसरों पर महाआरती और जप-यज्ञ में भाग लेते हैं। मंदिर के पुजारी स्थानीय समुदाय
+              के साथ मिलकर त्यौहारों और आयोजन को संचालित करते हैं, जिससे पारंपरिक रीति-रिवाज जीवित रहते हैं।
+            </motion.p>
+
+            
+             <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+                यह शिवालय मंदिर का बहुत प्राचीन शिवालय है यहाँ पर महंत मुकंदी लाल ब्राह्मणान जी ने बहुत पूजा, अर्चना, जप और तपस्या की है उनके बाद उनके पुत्र चन्द्रमुनि ब्राह्मणान ने इस प्रथा को संचालित किया है
+             </motion.p>
+
+             <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+                अब इस पीढ़ी दर पीढ़ी चल रही सेवा की प्रथा को मुख्य पुजारी पंडित सतीश और पंडित ऋषि राज ब्राह्मणान जी संचालित कर रहे है 
+             </motion.p>
+            <Divider />
+          </div>
+        </div>
+      </section>
+
+      {/* DHYANU BHAKAT */}
+      <section className="max-w-6xl mx-auto px-6 sm:px-10 py-24">
+        <div className="grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-7 space-y-10">
+            <motion.h2 {...fadeUp} className="font-yatra text-3xl sm:text-4xl text-ink-heading">
+              ध्यानु भक्त समुदाय
+            </motion.h2>
+
+            <motion.p {...fadeUp} className="drop-cap font-body text-lg text-ink-body leading-[1.95]">
+              ध्यानु भक्त वे श्रद्धालु हैं जो निरन्तर ध्यान और भक्ति में रत रहते हैं। इन भक्तों की सेवा से मंदिर की
+              सांस्कृतिक और आध्यात्मिक गतिविधियाँ समृद्ध होती हैं।
+            </motion.p>
+
+            <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+              यह समुदाय आयोजनों में मार्गदर्शन, उत्सवों में सहयोग और देवस्थान की सेवाओं में सक्रिय योगदान देता है।
+              उनकी लगन और समर्पण से ही मंदिर की परंपराएँ पीढ़ी-दर-पीढ़ी जीवित रहती हैं।
+            </motion.p>
+
+            <Divider />
+          </div>
+
+          <motion.div {...fadeUp} className="md:col-span-5 md:sticky md:top-28 self-start">
+            <div className="overflow-hidden border border-brass-gold/40"
+                 style={{ borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}>
+              <img src={templeImages.hawan || templeImages.maaMain}
+                   alt="ध्यानु भक्त" className="w-full h-[520px] object-cover" />
+            </div>
+            <div className="mt-6 p-6 bg-white border border-brass-gold/30">
+              <div className="flex items-center gap-3 text-saffron-dark">
+                <LotusIcon className="w-6 h-6" />
+                <p className="font-yatra text-2xl">ध्यानु भक्त</p>
+              </div>
+              <p className="font-body text-sm text-ink-muted mt-2">
+                ध्यानु भक्त समुदाय का समर्पित समूह है जो नियमित भजन, सेवा और आराधना में सक्रिय रूप से भाग लेता है।
               </p>
             </div>
           </motion.div>

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { OmIcon, LotusIcon, MandalaIcon } from "./Motifs";
 import { MapPin, Phone, Clock } from "lucide-react";
 
+const isShowMenu = false;
+
 const Footer = () => {
   return (
     <footer data-testid="site-footer" className="relative bg-[#2A1810] text-ivory/85 mt-24 overflow-hidden">
@@ -48,28 +50,30 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-brass-gold mb-4">जाएँ</p>
-          <ul className="space-y-2 text-sm">
-            {[
-              ["/", "मुख्य"],
-              ["/about", "हमारे बारे में"],
-              ["/events", "उत्सव"],
-              ["/members", "पुजारीगण"],
-              ["/contact", "संपर्क"],
-            ].map(([to, label]) => (
-              <li key={to}>
-                <Link
-                  to={to}
-                  data-testid={`footer-link-${label}`}
-                  className="hover:text-saffron-light transition-colors"
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {isShowMenu ? (
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-brass-gold mb-4">जाएँ</p>
+            <ul className="space-y-2 text-sm">
+              {[
+                ["/", "मुख्य"],
+                ["/about", "हमारे बारे में"],
+                ["/events", "उत्सव"],
+                ["/members", "पुजारीगण"],
+                ["/contact", "संपर्क"],
+              ].map(([to, label]) => (
+                <li key={to}>
+                  <Link
+                    to={to}
+                    data-testid={`footer-link-${label}`}
+                    className="hover:text-saffron-light transition-colors"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </div>
 
       <div className="relative border-t border-ivory/10">
