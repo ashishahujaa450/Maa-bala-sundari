@@ -95,6 +95,52 @@ const About = () => {
         </div>
       </section>
 
+      {/* MATA KI AKHAND JOT */}
+      <section className="max-w-6xl mx-auto px-6 sm:px-10 py-24">
+        <div className="grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-7 space-y-10">
+            <motion.h2 {...fadeUp} className="font-yatra text-3xl sm:text-4xl text-ink-heading">
+              माता की <span className="text-saffron-dark">अखंड ज्योत</span>
+            </motion.h2>
+
+            <motion.p {...fadeUp} className="drop-cap font-body text-lg text-ink-body leading-[1.95]">
+              माता की अखंड ज्योत मंदिर की आस्था और भक्ति का सबसे पवित्र प्रतीक है। यह दीपक हमेशा प्रज्वलित रहता है, जो माता के आशीर्वाद और सुरक्षा का अनंत प्रतीक है। यह ज्योत पीढ़ियों से निरंतर जल रही है और लाखों भक्तों के जीवन में प्रकाश लाती है।
+            </motion.p>
+
+            <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+              इस अखंड ज्योत का महत्व केवल धार्मिक नहीं है, बल्कि यह माता की अनंत कृपा का प्रतीक है। मंदिर के प्रत्येक भक्त को यह विश्वास है कि माता की यह ज्योत उनके घर में सुख, शांति और समृद्धि लाती है। हर रात्रि जब यह दीपक जलाया जाता है, तो यह माता के प्रति हमारी निष्ठा और समर्पण का प्रमाण है।
+            </motion.p>
+
+            <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+              मंदिर के मुख्य पुजारी इस अखंड ज्योत की रक्षा और पालन-पोषण करते हैं। प्रत्येक दिन, हर समय, यह दीपक जलता रहता है — कभी न बुझने वाली माता की कृपा का प्रतीक। इसी अखंड ज्योत के माध्यम से माता हर घर, हर हृदय में प्रवेश करती हैं।
+            </motion.p>
+
+            <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+              !! माता की ज्योत सदा जागृत रहे !!
+            </motion.p>
+
+            <Divider />
+          </div>
+
+          <motion.div {...fadeUp} className="md:col-span-5 md:sticky md:top-28 self-start">
+            <div className="overflow-hidden border border-brass-gold/40"
+                 style={{ borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}>
+              <img src={templeImages.maaMain}
+                   alt="माता की अखंड ज्योत" className="w-full h-[520px] object-cover" />
+            </div>
+            <div className="mt-6 p-6 bg-white border border-brass-gold/30">
+              <div className="flex items-center gap-3 text-saffron-dark">
+                <LotusIcon className="w-6 h-6" />
+                <p className="font-yatra text-2xl">अखंड ज्योत</p>
+              </div>
+              <p className="font-body text-sm text-ink-muted mt-2">
+                माता की अनंत कृपा और शाश्वत आशीर्वाद का चिरंतन प्रतीक।
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* PRINCIPLES */}
       <section className="bg-ivory-alt/60 border-y border-brass-gold/25 py-24">
         <div className="max-w-6xl mx-auto px-6 sm:px-10">
