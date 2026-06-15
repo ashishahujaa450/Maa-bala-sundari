@@ -72,8 +72,8 @@ const About = () => {
             <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
               पीढ़ी दर पीढ़ी की जा रही है सेवा: ब्राह्मण मनसा और उनके परिजनों ने वहीं माता के गुंबद का निर्माण करवाया
               और पूजा अर्चना आरंभ की। तब से लेकर आज तक उनके वंशज पीढ़ी दर पीढ़ी माता की सेवा में लगे हुए हैं।
-              स्वर्गीय पंडित मुकंदी ने आजीवन सच्चे मन से निस्वार्थ सेवा की। इसके बाद उन्होंने मंदिर की सेवा का कार्य
-              अपने पुत्र पंडित चंद्र मुनि को सौंपा, जिन्होंने पूरी निष्ठा के साथ यह दायित्व निभाया। अब पंडित चंद्र मुनि
+              स्वर्गीय महंत मुकंदी लाल ब्राह्मणान ने आजीवन सच्चे मन से निस्वार्थ सेवा की। इसके बाद उन्होंने मंदिर की सेवा का कार्य
+              अपने पुत्र पंडित चंद्र मुनि ब्राह्मणान को सौंपा, जिन्होंने पूरी निष्ठा के साथ यह दायित्व निभाया। अब पंडित चंद्र मुनि
               के दोनों पुत्र मुख्य पुजारी सतीश कुमार और ऋषि राज अपने पूर्वजों की परंपरा को आगे बढ़ाते हुए मां बाला सुंदरी की
               पिंडियों की सेवा और पूजा-अर्चना कर रहे हैं।
             </motion.p>
@@ -225,6 +225,45 @@ const About = () => {
               </div>
               <p className="font-body text-sm text-ink-muted mt-2">
                 ध्यानु भक्त समुदाय का समर्पित समूह है जो नियमित भजन, सेवा और आराधना में सक्रिय रूप से भाग लेता है।
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* MATA KA SINGH */}
+      <section className="max-w-6xl mx-auto px-6 sm:px-10 py-24">
+        <div className="grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-7 space-y-10">
+            <motion.h2 {...fadeUp} className="font-yatra text-3xl sm:text-4xl text-ink-heading">
+              माता का <span className="text-saffron-dark">सिंह</span>
+            </motion.h2>
+
+            <motion.p {...fadeUp} className="drop-cap font-body text-lg text-ink-body leading-[1.95]">
+              मंदिर के मुख्य द्वार पर माता का सिंह विराजमान है। यह प्रतिमूर्ति संरक्षात्मक और आध्यात्मिक दोनों ही रूपों
+              में महत्वपूर्ण मानी जाती है और भक्तों के लिए विशेष श्रद्धा का केंद्र है।
+            </motion.p>
+
+            <motion.p {...fadeUp} className="font-body text-lg text-ink-body leading-[1.95]">
+              भक्त अक्सर इस स्थान पर आकर शीश नवाते हैं और माता के संरक्षण के लिए प्रार्थना करते हैं।
+            </motion.p>
+
+            <Divider />
+          </div>
+
+          <motion.div {...fadeUp} className="md:col-span-5 md:sticky md:top-28 self-start">
+            <div className="overflow-hidden border border-brass-gold/40"
+                 style={{ borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}>
+              <img src={templeImages.singh}
+                   alt="माता का सिंह" className="w-full h-[520px] object-cover" />
+            </div>
+            <div className="mt-6 p-6 bg-white border border-brass-gold/30">
+              <div className="flex items-center gap-3 text-saffron-dark">
+                <LotusIcon className="w-6 h-6" />
+                <p className="font-yatra text-2xl">माता का सिंह</p>
+              </div>
+              <p className="font-body text-sm text-ink-muted mt-2">
+                यह प्रतिमा मंदिर के गर्भगृह की सुरक्षा का प्रतीक है और दर्शन-प्रिय भक्तों के मन में आदर जगाती है।
               </p>
             </div>
           </motion.div>

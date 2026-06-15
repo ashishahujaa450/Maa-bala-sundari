@@ -7,6 +7,7 @@ import rishiraj from './rishiraj.jpeg';
 import maaMain from './mandir-main.jpeg';
 import maaJot from './mata_jot.jpeg';
 import shivalya from './shivalya.jpeg';
+import singh from './singh.jpeg';
 
 export const templeImages = {
   maaIdol: mata,
@@ -20,5 +21,6 @@ export const templeImages = {
   rishirajPriest: rishiraj,
   maaMain: maaMain,
   maaJot: maaJot,
-  shivalya: shivalya
+  shivalya: shivalya,
+  singh: singh
 };

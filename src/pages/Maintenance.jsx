@@ -17,7 +17,7 @@ const Maintenance = () => {
       >
         <p className="text-saffron-dark uppercase tracking-[0.3em] text-sm mb-4">अस्थायी सूचना</p>
         <h1 className="font-yatra text-4xl sm:text-5xl text-ink-heading leading-tight">
-          देवी मंदिर की वेबसाइट अभी कुछ समय के लिए बंद है,
+          यह वेबसाइट अभी कुछ समय के लिए बंद है,
           <span className="block text-saffron-dark">हम जल्द ही अपनी सुविद्याए नियमित रूप से शुरू करेंगे </span>
         </h1>
         <p className="font-body text-base text-ink-body mt-8 leading-relaxed">
