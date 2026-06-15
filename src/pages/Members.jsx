@@ -14,25 +14,25 @@ const fadeUp = {
 
 const peethadhishMembers = [
   {
-    name: "पीठाधीश पंडित सतीश कुमार",
-    role: "पीठाधीश पुजारी",
+    name: "सतीश कुमार ब्राह्मणान",
+    role: "मुख्य पुजारी",
     img: templeImages.satishPriest,
-    description: "मंदिर के पीठाधीश पुजारी पंडित सतीश कुमार मंदिर में धार्मिक, सामाजिक कार्यों का आयोजन करते हैं।",
+    description: "मंदिर के मुख्य पुजारी पंडित सतीश कुमार मंदिर में धार्मिक, सामाजिक कार्यों का आयोजन करते हैं।",
   },
   {
-    name: "पीठाधीश पंडित ऋषि राज",
-    role: "पीठाधीश पुजारी",
+    name: "ऋषि राज ब्राह्मणान",
+    role: "मुख्य पुजारी",
     img: templeImages.rishirajPriest,
-    description: "मंदिर के पीठाधीश पुजारी पंडित ऋषि राज जी मंदिर में धार्मिक, सामाजिक कार्यों का आयोजन करते हैं।",
+    description: "मंदिर के मुख्य पुजारी पंडित ऋषि राज जी मंदिर में धार्मिक, सामाजिक कार्यों का आयोजन करते हैं।",
   },
 ];
 
 const members = [
   { name: "श्रीमती सत्य देवी", role: "Chairman", icon: womanUserCircleIcon },
-  { name: "पीठाधीश सतीश कुमार", role: "President", img: templeImages.satishPriest },
+  { name: "मुख्य पुजारी सतीश कुमार", role: "President", img: templeImages.satishPriest },
   { name: "श्रीमती रूबी शर्मा", role: "Vice President", icon: womanUserCircleIcon },
-  { name: "पीठाधीश ऋषि राज", role: "General Secretary", img: templeImages.rishirajPriest },
-  { name: "नित्यम गौर", role: "Joint Secretary", icon: manUserCircleIcon },
+  { name: "मुख्य पुजारी ऋषि राज", role: "General Secretary", img: templeImages.rishirajPriest },
+  { name: "नित्यम गौड़", role: "Joint Secretary", icon: manUserCircleIcon },
   { name: "श्रीमती नीलम रानी", role: "Treasurer", icon: womanUserCircleIcon },
 ];
 
@@ -58,7 +58,7 @@ const Members = () => {
 
       <section className="max-w-6xl mx-auto px-6 sm:px-10 py-24">
         <motion.h2 {...fadeUp} className="font-yatra text-3xl sm:text-4xl text-ink-heading text-center">
-          मंदिर के <span className="text-saffron-dark">पीठाधीश पुजारी</span>
+          पुजारी परिवार<span className="text-saffron-dark"> ब्राह्मणान</span>
         </motion.h2>
         <Divider />
 
@@ -120,7 +120,7 @@ const Members = () => {
                 <span className="text-xs uppercase tracking-[0.3em] text-saffron">{member.role}</span>
                 <h3 className="font-yatra text-2xl text-ink-heading mt-4">{member.name}</h3>
                 <p className="font-body text-ink-body mt-4 leading-relaxed">
-                  सदस्य महोदय/महोदया मंदिर के आयोजन, सेवा और परंपरा को आगे बढ़ाने में सक्रिय रूप से सहयोग करते हैं।
+                  सदस्य महोदय/महोदया मंदिर के आयोजन, माता की पिंडियो की और शिवालय की सेवा और परंपरा को पीढ़ी दर पीढ़ी आगे बढ़ाने में सक्रिय रूप से सहयोग करते हैं। 
                 </p>
               </div>
             </motion.div>
